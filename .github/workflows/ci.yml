@@ -104,6 +104,9 @@ jobs:
         - build: win-gnu
           os: windows-2022
           rust: nightly-x86_64-gnu
+        - build: winaarch64-msvc
+          os: windows-11-arm
+          rust: nightly
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
